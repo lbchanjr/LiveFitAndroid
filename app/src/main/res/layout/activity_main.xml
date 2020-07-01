@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff6e2"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="70dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logoCard">
+        <ImageView
+            android:layout_marginTop="-4dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_width="127dp"
+            android:layout_height="127dp"
+
+            android:background="#fff6e2"
+            android:src="@drawable/livefitfood"
+            android:id="@+id/imgLogo"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="15sp"
+        android:id="@+id/txtLoginEmailLabel"
+        android:layout_below="@+id/logoCard"/>
+    <EditText
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtLoginEmail"
+        android:layout_below="@+id/txtLoginEmailLabel"
+        android:inputType="textEmailAddress"
+        />
+
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="15sp"
+        android:id="@+id/txtLoginPasswordLabel"
+        android:layout_below="@+id/edtLoginEmail"/>
+    <EditText
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtLoginPassword"
+        android:layout_below="@+id/txtLoginPasswordLabel"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Sign-in"
+        android:layout_below="@+id/edtLoginPassword"
+        android:id="@+id/btnSignIn"
+        android:onClick="signInButtonPressed"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/txtRegisterCheck"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/btnSignIn"
+        android:text="Do you have an account? If not, please register."/>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Register"
+        android:layout_below="@+id/txtRegisterCheck"
+        android:id="@+id/btnRegister"
+        android:onClick="registerButtonPressed"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/txtGoogleSigninCheck"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/btnRegister"
+        android:text="If you have a Google account, please sign-in below"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_alignLeft="@+id/txtGoogleSigninCheck"
+        android:layout_marginTop="10dp"
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtGoogleSigninCheck"/>
+
+
+</RelativeLayout>

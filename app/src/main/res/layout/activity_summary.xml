@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f0b9"
+    tools:context=".SummaryActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review Order"
+        android:layout_marginLeft="15dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:id="@+id/txtReviewLabel"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order code: xxx"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/txtOrderCode"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtReviewLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Date: xxx"
+        android:textSize="15sp"
+        android:id="@+id/txtOrderDate"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/txtOrderCode"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal Package: xxx"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtOrderDate"
+        android:id="@+id/txtMealPackage" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_divide"
+        android:layout_below="@id/txtMealPackage"
+        android:layout_margin="15dp"
+        android:id="@+id/lineDivideMealPackage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subscription Price"
+        android:layout_below="@id/lineDivideMealPackage"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/txtSubPriceLabel"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$xxxx.xx"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:layout_below="@id/lineDivideMealPackage"
+        android:id="@+id/txtSubPriceAmount"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discounted Price"
+        android:layout_below="@id/txtSubPriceLabel"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/txtSubDiscPriceLabel"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$xxxx.xx"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:textSize="15sp"
+        android:layout_below="@id/txtSubPriceAmount"
+        android:id="@+id/txtSubDiscPriceAmount"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtotal (before tax)"
+        android:layout_below="@id/txtSubDiscPriceAmount"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/txtSubSubtotal"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$xxxx.xx"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        android:layout_below="@id/txtSubDiscPriceAmount"
+        android:textStyle="bold"
+        android:id="@+id/txtSubtotalAmount"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tax (13% HST)"
+        android:layout_below="@id/txtSubtotalAmount"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/txtSubTaxLabel"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$xx.xx"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:textSize="15sp"
+        android:layout_below="@id/txtSubtotalAmount"
+        android:id="@+id/txtSubTaxAmount"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line_divide"
+        android:layout_below="@id/txtSubTaxAmount"
+        android:layout_margin="15dp"
+        android:id="@+id/lineDivideGrandTotal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grand total"
+        android:layout_below="@id/lineDivideGrandTotal"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/txtSubGrandtotal"
+        android:textStyle="bold"
+        android:textSize="23sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$xxxx.xx"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:textSize="23sp"
+        android:layout_below="@id/lineDivideGrandTotal"
+        android:textStyle="bold"
+        android:id="@+id/txtGrandtotalAmount"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="Confirm Order"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:onClick="confirmOrderPressed"/>
+
+</RelativeLayout>

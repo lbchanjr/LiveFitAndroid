@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:cardBackgroundColor="#e8fcc7">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="#b2af75"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="x-month Subscription Plan"
+            android:id="@+id/txtSubPlanName"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Original Price: xx"
+                android:id="@+id/txtSubOrigPrice"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="(-xx%)"
+                android:id="@+id/txtSubDiscount"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discounted Price: xx"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/txtSubDiscPrice"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Savings: xx"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"
+            android:id="@+id/txtSubSavings"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

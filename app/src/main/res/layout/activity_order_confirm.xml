@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderConfirmActivity">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="70dp"
+         android:textSize="23sp"
+         android:text="Thank you for subscribing to the"
+         android:layout_gravity="center"/>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="25sp"
+         android:text="xxx Package"
+         android:textStyle="bold"
+         android:id="@+id/txtMealPackageName"
+         android:layout_gravity="center"/>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="30dp"
+         android:textSize="23sp"
+         android:text="Your order code is"
+         android:layout_gravity="center"/>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="25sp"
+         android:text="order code goes here"
+         android:textColor="@android:color/holo_red_light"
+         android:textStyle="bold"
+         android:id="@+id/txtOrderCode"
+         android:layout_gravity="center"/>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="30dp"
+         android:textSize="18sp"
+         android:textStyle="bold"
+         android:textAlignment="center"
+         android:textColor="@android:color/holo_blue_dark"
+         android:text="You may now drive to the shop location\nto pick up your first set of meals."
+         android:layout_gravity="center"/>
+
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:textSize="18sp"
+         android:textStyle="bold"
+         android:textAlignment="center"
+         android:textColor="@android:color/black"
+         android:text="Once you arrive, please click\non the button below."
+         android:layout_gravity="center"/>
+
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="I'm here!"
+         android:onClick="orderConfButtonPressed"
+         android:layout_marginTop="10dp"
+         android:paddingLeft="30dp"
+         android:paddingRight="30dp"
+         android:layout_gravity="center"/>
+
+     <LinearLayout
+         android:layout_marginTop="20dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:padding="20dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:id="@+id/llThankYou"
+         android:background="@android:color/holo_orange_light">
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:textSize="18sp"
+         android:textAlignment="center"
+         android:textColor="@android:color/black"
+         android:text="Thank you for letting us know that you're here.\n\nOur staff will be right there shortly\nto deliver your order"
+         android:layout_gravity="center"/>
+
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Return to main screen"
+         android:onClick="returnMainScreenPressed"
+         android:layout_marginTop="20dp"
+         android:paddingLeft="30dp"
+         android:paddingRight="30dp"
+         android:layout_gravity="center"/>
+     </LinearLayout>
+
+
+
+
+</LinearLayout>
