@@ -5,7 +5,7 @@
 
 #### Screenshots  
 
-<img src="./screenshots/screenshot1.png" alt="Title screen" width="200">     <img src="./screenshots/screenshot2.png" alt="Title screen" width="200">     <img src="./screenshots/screenshot3.png" alt="Title screen" width="200">     <img src="./screenshots/screenshot4.png" alt="Title screen" width="200">     <img src="./screenshots/screenshot5.png" alt="Title screen" width="200">     <img src="./screenshots/screenshot6.png" alt="Title screen" width="200">
+<img src="./screenshots/screenshot1.png" alt="Title screen" width="200">     <img src="./screenshots/screenshot2.png" alt="Title screen" width="200">     <img src="./screenshots/screenshot3.png" alt="Title screen" width="200">     <img src="./screenshots/screenshot4.png" alt="Title screen" width="200">     <img src="./screenshots/screenshot5.png" alt="Title screen" width="200">     <img src="./screenshots/screenshot6.png" alt="Title screen" width="200">     <img src="./screenshots/screenshot7.png" alt="Title screen" width="200">
 
 #### Technologies/Concepts used
 
