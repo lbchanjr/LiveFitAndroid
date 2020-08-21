@@ -1,7 +1,7 @@
 # Live Fit Food Ordering App for Android
 
 ### Mock ordering app for the livefitfood.ca website.
-#### ***DISCLAIMER: This app is was developed as an exercise in native Android mobile application development and is not in any way affiliated with the livefitfood.ca website or any of its mobile apps.*** 
+#### ***DISCLAIMER: This app was developed as an exercise in native Android mobile application development and is not in any way affiliated with the livefitfood.ca website or any of its mobile apps.*** 
 
 #### Screenshots  
 
@@ -9,40 +9,35 @@
 
 #### Technologies/Concepts used
 
-* HTML5, CSS3, JavaScript
+* User authentication/registration, storage, database services using the Firebase development platform.
 
-* Flexbox and Grid layouts
+* Multiple activity screens
 
-* Persistent data storage using Local and Session storage APIs
+* Location services
 
-* DOM manipulation
+* RecyclerView
 
-* Multiple web page application
+* CardView Layout of RecyclerView items/rows
 
-* Responsive page layout
+* Event Listeners
 
-* Timer Intervals
+* MediaStore for Camera photo taking function
 
-* Event Listeners (keypress and touch/click)
-
-* Collision detection of objects
+* Passing of data between activities using intents
 
 #### Features
 
-* Interactive menu for selecting game option (rules, selecting difficulty level, audio mute ON/OFF).
+* User login and registration using email/password or Google account.
 
-* Randomized math question display for each spaceship.
+* 2-way login: User may login as Admin or as a regular 
 
-* Randomized speed for target spaceships when descending.
+* Admin user-interface that will allow the following functions: 
+  - adding of meal kits
+  - adding of meals for an existing meal kit
+  - adding of subcription plans
 
-* Saving and loading of game state.
+* Regular user-interface that will allow user to subscribe to mealkits.
 
-* Game sound and sound effects.
-
-* Score tracking with hit/miss percentage info.
-
-#### Game link: https://alienaddition.louisechan.ca/
-
-#### Link to game specification: <a href="./docs/Alien Addition Shooter Game - Programming specification.pdf" target="_blank">[Game Specification]</a>
+#### Link to specification: <a href="./docs/MAD4006 - Project - Meal Delivery Apps, Revised.pdf" target="_blank">[App Specification]</a>
 
 
