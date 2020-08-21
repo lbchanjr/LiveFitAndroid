@@ -9,11 +9,11 @@
 
 #### Technologies/Concepts used
 
-* User authentication/registration, storage, database services using the Firebase development platform.
+* Firebase cloud development platform for user authentication/registration, storage, database services.
 
 * Multiple activity screens
 
-* Location services
+* Google Location services
 
 * RecyclerView
 
