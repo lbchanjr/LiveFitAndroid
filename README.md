@@ -29,7 +29,7 @@
 
 * User login and registration using email/password or Google account.
 
-* 2-way login: User may login as Admin or as a regular 
+* 2-way login: User may login as Admin or as a regular user (customer)
 
 * Admin user-interface that will allow the following functions: 
   - adding of meal kits
